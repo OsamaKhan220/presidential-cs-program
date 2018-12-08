@@ -12,7 +12,9 @@ class Copyright extends Component {
         return ( 
           <div className="copyright">
           <p>© 2018 PIAIC. All rights reserved.</p>
-          <div><img alt="panacloudlogo" src={panacloudlogo} height="60px" /></div>
+          <div>
+              <a href="https://www.panacloud.ai/" target="_blank" rel="noopener noreferrer"><img alt="panacloudlogo" src={panacloudlogo} height="60px" /></a>
+          </div>
         </div>
          );
     }

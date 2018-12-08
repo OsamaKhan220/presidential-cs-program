@@ -58,6 +58,7 @@
       
       
       
+      
      
       
 
@@ -211,7 +212,7 @@
         transform: translateX(-50%);
       }
       .verticle-circle .circle{
-       margin-top:120%; 
+       /* margin-top:120%;  */
       }
       .B1{
         margin-top: 190% !important;
@@ -248,15 +249,20 @@
       .circle-line{
         display: block;
         position: absolute;
-        top:14vw;
+        top:14.8vw;
         left: 50%;
         transform: translateX(-50%);
-        height: 87%;
+        height: 83%;
         width: 4px;
-        opacity:0.05 !important;
+        /* opacity:0.05 !important; */
         background: #192a56;
+        margin-top: -4%;
       }
-
+      @media (max-width:1000px){
+        .circle-line,.verticle-circle{
+          display: none;
+        }
+      }
       .curr{
         width: 220px;
         height: 60px;

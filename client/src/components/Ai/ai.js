@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import "./AiStyle.css"
 import git12 from "./images/git1.png"
 import Banner from "../Banner/Banner"
 import Quarters from "../Quarter/Quarter"
 import Blog from "../Blog/Blog"
-import Footer from "../Footer/Footer"
+import Cover from "../Cover/Cover"
 
-  import anaconda from "./images/Anaconda.png"
+import anaconda from "./images/Anaconda.png"
 
-  import pythonlogo from "./images/python-logo.png"
+import pythonlogo from "./images/python-logo.png"
 
-  import dataScience from "./images/data-science0-logo-1.png"
+import dataScience from "./images/data-science0-logo-1.png"
 
-  import keras from "./images/keras-logo-2018-large-1200.png"
+import keras from "./images/keras-logo-2018-large-1200.png"
 
-  import linux from "./images/linux-logo.png";
+import linux from "./images/linux-logo.png";
 
-  import docker from "./images/docker_facebook_share.png";
+import docker from "./images/docker_facebook_share.png";
 
-  import chart from "./images/chart.png";
+import chart from "./images/chart.png";
 
-  import ms from "./images/ms.png";
+import ms from "./images/ms.png";
 
-  import container from "./images/container.png";
+import container from "./images/container.png";
 
-  import ai from "./images/ai.png";
+import ai from "./images/ai.png";
 
 
 
@@ -33,6 +32,7 @@ import Footer from "../Footer/Footer"
 
 
 class AI extends Component {
+  
   render() {
     return (
       <div className="Artificial-Intelligence-Page">
@@ -45,7 +45,7 @@ class AI extends Component {
           tagline2="GETTING PAKISTAN READY FOR THE NEW ERA OF COMPUTING ENABLED BY THE RISE OF AI."
           courseLine = "A four-quarter AI program in Data Science, Machine Learning, and Deep Learning."
         />
-          
+
 
           <Quarters
             Q1 = {
@@ -87,7 +87,7 @@ class AI extends Component {
                     }
                   />
 
-                    
+
 
                   <Blog 
                     left = {false}
@@ -101,7 +101,7 @@ class AI extends Component {
                       }
                     }
                   />
-                  
+
                    <Blog 
                     left = {true}
                     data = {
@@ -151,7 +151,7 @@ class AI extends Component {
                     }
                   />
 
-                   
+
                   <Blog 
                     left = {true}
                     data = {
@@ -212,23 +212,22 @@ class AI extends Component {
                       }
                     }
                   />
-                  {/* <div className="btn-Grp">
-                        
+                  <div className="btn-Grp">
+
                         <button className="Rectangle-60 curr" type="submit" >Download Curriculum</button>   
                         <button className="Rectangle-60 apply" type="submit" >Apply</button>                  
 
 
-                  </div> */}
+                  </div>
                 </div>
 
-                
+
               </div>
             </div>
           </div>
 
 
         </div>
-          {/* <Footer /> */}
 
 
       </div >

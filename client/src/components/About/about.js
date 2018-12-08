@@ -29,7 +29,7 @@ class About extends Component {
                 <div className="imgHead">
                 {/* <center> */}
                    <div className="greenCir"></div>
-                   <div className="whiteCir2" style={{backgroundImage: "url("+president+")",backgroundPosition: "top"}}></div>
+                   <div className="whiteCir3" style={{backgroundImage: "url("+president+")",backgroundPosition: "top"}}></div>
                    <div className="imgDiv"></div>
 
                 {/* </center> */}

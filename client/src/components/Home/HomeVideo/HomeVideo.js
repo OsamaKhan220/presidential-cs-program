@@ -14,7 +14,7 @@ class HomeVideo extends Component {
                 <div className="container ">
                     <div className="homeVideoCont">
                         <div className="row ">
-                            <div className="col-lg-7">
+                            <div className="col-lg-8">
                                 <div className="slider-doc-f1 d-flex justify-content-center align-items-center">
                                     <div className="slider-doc-txt">
 
@@ -23,7 +23,7 @@ class HomeVideo extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-3 d-flex justify-content-center align-items-center">
+                            <div className="col-lg-4 d-flex justify-content-center align-items-center">
                             <div className="cardArea2 cardArea ">
                 <div className="imgHead2">
                 {/* <center> */}

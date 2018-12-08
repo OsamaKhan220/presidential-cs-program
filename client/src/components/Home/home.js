@@ -6,59 +6,49 @@ import Footer from '../Footer/Footer';
 import HomeVideo from './HomeVideo/HomeVideo';
 import Countdown from './Countdown/Countdown';
 import SupportingPartners from './SupportingPartners/SupportingPartners';
+import Cover from "../Cover/Cover"
+
+
 
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showed: JSON.parse(localStorage.getItem("showed")) ?
+       true : false
+    }
+  }
+  cover = () => {
+    this.CoverPage.className += " slide "
+    localStorage.setItem("showed",true);
+  }
   render() {
     const currentDate = new Date();
+    const {showed} = this.state;
     const year = (currentDate.getMonth() === 11 && currentDate.getDate() > 23) ? currentDate.getFullYear() + 1 : currentDate.getFullYear();
     return (
-      <div className="App">
+      <div>
+      {!showed && <Cover cover={this.cover} parentThis = {this} />}
+     <div className="App">
 
      
         <HomeVideo />
         <Programs />
         <SupportingPartners />
 
-         {/* <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav> */}
+        
 
         
-        {
-          /*
+        {/* {
+          
           <News />
-          */
-        }
+          
+        } */}
         
         <Footer />
       </div >
+      </div>
     );
   }
 }

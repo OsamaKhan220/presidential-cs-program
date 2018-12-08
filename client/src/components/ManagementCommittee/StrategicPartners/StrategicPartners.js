@@ -21,10 +21,10 @@ class SupportingPartners extends Component {
                 <div className="col-12 mt-4 mb-4 supporterIcons d-flex justify-content-center align-items-center">
                 <div className="">
                 <ul>
-                        <li><img src={iqraLogo} className="SIimg1" /></li>
-                        <li><img src={panacloudLogo} /></li>
-                        <li><img src={psx2Logo} /></li>
-                        <li><img src={saylaniLogo} /></li>
+                    <a href="https://iqra.edu.pk/" target="_blank" rel="noopener noreferrer"> <li><img src={iqraLogo} className="SIimg1" alt="iqra-logo"/></li></a>
+                    <a href="https://www.panacloud.ai/" target="_blank" rel="noopener noreferrer"> <li><img src={panacloudLogo} alt="panacloud-logo" /></li> </a>
+                    <a href="https://www.psx.com.pk/" target="_blank" rel="noopener noreferrer"> <li><img src={psx2Logo} alt="pak-stock-logo" /></li></a>
+                    <a href="http://www.saylaniwelfare.com/" target="_blank" rel="noopener noreferrer"> <li><img src={saylaniLogo} alt="saylani-logo" /></li></a>
                     </ul>
                 </div>
                 </div>

@@ -18,6 +18,10 @@
     width: 200px !important;
 }
 
+.form-control{
+    border: none !important;
+}
+
 @media (max-width: 400px){
     .homeVideoCont{
         padding-top: 40px;
